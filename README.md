@@ -20,24 +20,25 @@ This analysis was performed with:
 In this project a model pipeline is build which classifies the messages sent during disaster as one of 36 categories which were already defined. The data is provided by Appen (formally figure 8). The project comprises an ETL-Pipeline to load the datasets, merge them, prepare the data and store them into a SQL database. Afterwards a machine learning model is trained to classify new disaster messages after preprocessing the messages and saved into a pickle-file.
 
 ## 3.	File Description
+- **Preparation**
+    - categories.csv
+    - ETL Pipeline Preparation.ipynb
+    - messages.csv
+    - ML Pipeline Preparation.ipynb
+    - test.db
+    - test.pkl
 - **app**					
     - **templates**
         - go.html
         - master.html
     - run.py
 - **data**
-    - disaster.db
     - disaster_categories.csv
     - disaster_messages.csv
     - process_data.py
 - **models**
-    - classifier.pkl
     - train.py
-- **preparation**
-    - categories.csv
-    - ETL Pipeline Preparation.ipynb
-    - messages.csv
-    - ML Pipeline Preparation.ipynb
+
 - README.md
 
 ## 4.	How to interact with this project
